@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<style>
+    h1{
+        text-align: center;
+        font-size: 49px;
+        color: red;
+
+    }
+    body{
+        background-color: rgb(18, 18, 85)
+        content: "";
+
+        position: absolute;
+        background: url('static/oo.jpg') ;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.85;
+        top: 0px;
+        left: 0px;
+        height:1200px
+
+    }
+    .cont{
+        background: url('static/oo.jpg')no-repeat ;
+        height:765px;
+    }
+
+    button {
+        background-color: purple;
+        width: 99%;
+        color:gold;
+        padding: 14px;
+        margin: 11px 0px;
+        border: none;
+        cursor: pointer;
+        font-size: 29px;
+        text-align: center;
+        justify-content: center;
+        border-radius: 10px;
+        border: 2px solid white;
+        display: flex;
+
+    }
+
+    .left div {
+        text-align: center;
+        font-size: 25px;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .left {
+        position: relative;
+        left: 34px;
+        top: -25px;
+        display: inline-block;
+
+    }
+    .container h4{
+        color : red;
+        text-align: center;
+        font-size: 35px;
+    }
+    a{
+        font-size: 20px;
+        color: blue;
+        padding: 5px;
+        margin: 10px 0px;
+    }
+    .container  {
+        flex-wrap: wrap;
+        background-color : rgb(23, 2, 2);
+        height: 30%;
+        width :100%;
+        justify-content: center;
+
+
+
+    }
+    p a {
+        border :2px solid black;
+        background-color: black;
+        color : yellow;
+    }
+    li{
+        color: white;
+        font-size: 21px;
+    }
+
+
+</style>
+<body>
+<div class="cont">
+    <div>
+        <h1>DAILY NEWS PAPER</h1>
+
+    </div>
+    <div class="left">
+
+            <div><p>WELCOME :- {{ data [0][1]}}</p></div>
+    </div>
+    <h1 class="hello"></h1>
+    <form method="post" action="/english">
+    <div>
+            <button type="submit">English News</button>
+    </div>
+    </form>
+
+    <form method="post" action="/bengali">
+    <div>
+        <button type="submit">Bengali News </button>
+    </div>
+    </form>
+
+
+    <form method="post" action="/hindi">
+    <div>
+        <button type="submit">Hindi News </button>
+    </div>
+    </form>
+
+     <form method="post" action="/marathi">
+    <div>
+        <button type="submit">Marathi News </button>
+    </div>
+    </form>
+
+
+
+    <p><a href="/logout">Logout</a> </p>
+
+    </div>
+<div class="container">
+      <div class="row">
+
+        <div class="col-sm-4 offset-md-1 py-4">
+          <h4 class="text-white">Contact Us</h4>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-whitee" ><img src="static/fb.jpg">Like us on Facebook</a></li><br>
+            <li><img src="static/g.jpg">Email us- newsdaily774@gmail.com</li><br>
+
+          </ul>
+            
+        </div>
+      </div>
+    </div>
+
+</body>
+</html>

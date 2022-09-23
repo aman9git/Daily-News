@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+</head>
+<style>
+    body{
+        background-color: black;
+        color: white;
+    }
+     form {
+        border: 3px solid #f1f1f1;
+        width: 100%;
+        margin: 8px 0;
+        padding: 12px 20px;
+        display: inline-block;
+        box-sizing: border-box;
+        font-size: 23px;
+        color: white;
+        border-radius: 10px;
+     }
+     .registerbtn {
+        background-color: #04AA6D;
+        color: white;
+        padding: 16px 20px;
+        margin: 8px 0;
+         border: none;
+        cursor: pointer;
+        width: 100%;
+        opacity: 0.9;
+        border-radius: 10px;
+     }
+
+     .registerbtn:hover {
+        opacity:1;
+     }
+</style>
+<body>
+<h1>Register Here</h1>
+<p>Please fill in this form to create an account.</p>
+
+<form method="post" action="/reg_validation">
+
+    <label>Name</label><br>
+    <input name = "user's_name" placeholder="Enter Your Name"><br>
+    <label>Email</label><br>
+    <input name = "user's_email" placeholder="abc@gmail.com"><br>
+    <label>Password</label><br>
+    <input name = "user's_password" placeholder="Enter Password" ><br>
+    <label>City</label><br>
+    <input name = "user's_city" placeholder="Enter Your City"><br>
+    <label>Gender</label><br>
+    <input name = "user's_gender" placeholder="Enter Your Gender"><br>
+    <button type="submit" class="registerbtn">Register</button>
+
+</form>
+
+<p>Already a Member!<a href="/"> Login here!!!</a></p>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+</head>
+<style>
+    body{
+        background-color: skyblue;
+    }
+    h1{
+        text-align: center;
+        font-size: 49px;
+    }
+    button {
+       background-color: rgb(8, 8, 121);
+        width: 100%;
+        color: orange;
+        padding: 15px;
+        margin: 10px 0px;
+        border: none;
+        cursor: pointer;
+        font-size: 23px;
+        border-radius: 10px;
+
+    }
+     form {
+        border:  3.5px solid darkblue;
+        width: 100%;
+        margin: 8px 0;
+        padding: 12px 20px;
+        display: inline-block;
+        box-sizing: border-box;
+        font-size: 23px;
+        border-radius: 10px;
+
+    }
+     button:hover {
+        opacity: 0.7;
+    }
+</style>
+<body>
+
+<h1>User Login</h1>
+<form method="post" action="/login_validation">
+    <label>Email</label><br>
+    <input name="user's_email" placeholder="abc@gmail.com"><br>
+    <label>Password</label><br>
+    <input name="user's_password" placeholder="Enter Password"><br>
+    <button type="submit">Login</button>
+
+</form>
+<input type="checkbox" checked="checked"> Remember me
+<p>Not a Member?<a href="/register"> Register here!!!</a></p>
+
+</body>
+</html>
